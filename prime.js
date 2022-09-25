@@ -19,3 +19,4 @@ if(x==true){
 else {
 console.log("Not Prime")
 }
+
