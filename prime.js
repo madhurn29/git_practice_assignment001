@@ -1,12 +1,21 @@
 function checkPrime(num){
-    
-    for(let i=1;i<=num;i++){
+    let factor=0;
+    for(let i=1;i<=num**0.5;i++){
         if(num%i==0){
-            return true;
+            factor++
         }
     }
+    if(factor==1){
+        return true;
+    }
+    
     return false;
 }
 
-let x=checkPrime(12)
-console.log(x)
+let x=checkPrime(13)
+if(x==true){ 
+    console.log("Prime")
+}
+else {
+console.log("Not Prime")
+}
